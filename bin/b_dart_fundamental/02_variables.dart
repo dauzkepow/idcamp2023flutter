@@ -18,7 +18,7 @@ void main() {
 
   //# Deklarasi variabel
   //-> menyimpan nama dan ruang di dalam memori tanpa memberikan nilai
-  var myAge1;
+  int myAge1;
   myAge1 = 30;
   print(myAge1); //30
 }

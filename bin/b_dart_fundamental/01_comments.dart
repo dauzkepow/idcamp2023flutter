@@ -10,6 +10,8 @@
 /// mengabaikan semua teks kecuali yang tertutup dalam kurung siku ([])
 /// dalam kurung siku kita dapat memasukkan referensi dari nama kelas, variabel, atau fungsi
 ///
+library;
+
 
 /// Fungsi [main] akan menampilkan 2 output
 /// Output pertama menampilkan teks dan output kedua menampilkan hasil perkalian pada fungsi [calculate]
