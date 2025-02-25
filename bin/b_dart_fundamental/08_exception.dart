@@ -89,9 +89,13 @@ void main() {
     var y = 0;
     print(x ~/ y);
   } catch (e, s) {
-    print('Exception happened: $e');
-    print('Stack trace: $s');
+    print(
+      'Exception happened: $e',
+    ); //Exception happened: IntegerDivisionByZeroException
+    print('Stack trace: $s'); //Stack trace: #0
   } finally {
-    print("Baris ini akan selalu dieksekusi");
+    print(
+      "Baris ini akan selalu dieksekusi",
+    ); //Baris ini akan selalu dieksekusi
   }
 }
