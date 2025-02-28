@@ -51,6 +51,7 @@ void main() {
 
 //bisa juga untuk mengecek beberapa kondisi sekaligus dengan menggabungkan else dan if
 
+/*
 //==========================
 //-- Contoh-3
 void main() {
@@ -75,6 +76,7 @@ String calculateScore(score) {
 //return sesuai tipe data nama String
 //jika tipe data num maka return berupa angka
 //==========================
+*/
 
 /*
 ---- Conditional Expressions ----
@@ -88,3 +90,20 @@ jika variabel name tidak bernilai null, buyer menyimpan nilai dari name
 jika bernilai null buyer akan berisi 'user'
 
 */
+
+//Latihan--
+//minyak goreng dan telur
+//ke pasar beli 1 botol minyak goreng, kalau ada telur ambil 6
+
+//==========================
+void main() {
+  var minyak = 1;
+  var telur = true;
+
+  if (telur == true) {
+    print('minyak yang diambil = ${minyak * 6}'); //minyak yang diambil = 6
+  }
+}
+
+
+//==========================
