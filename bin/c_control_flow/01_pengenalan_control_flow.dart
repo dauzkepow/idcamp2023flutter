@@ -1,4 +1,6 @@
 /*
+  Susunan instruksi yang mengevaluasi kondisi ketika program dijalankan
+  
   Setiap hari kita melakukan perhitungan dan perbandingan guna membuat keputusan
   apakah perlu mencuci kendaraan ketika cuaca sedang cerah?
   apa saja transportasi online yang bisa dipesan ketika hujan?

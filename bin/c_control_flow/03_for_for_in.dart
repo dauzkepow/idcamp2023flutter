@@ -53,6 +53,7 @@ Latihan buat kode seperti berikut
 **********
 */
 
+/*
 //==========================
 void main() {
   // index [i] akan berulang untuk menampilkan teks tiap baris
@@ -65,5 +66,38 @@ void main() {
     print(text);
   }
 }
+//==========================
+*/
 
+//FOR-IN
+//perulangan element data yang di dalam array atau List
+/*
+for (variable_name in list_object) {
+  statements
+}
+*/
+
+//==========================
+//Contoh-2
+void main() {
+  List<int> listAngka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  print('Output :');
+
+  for (var angka in listAngka) {
+    print(angka);
+  }
+}
+
+///output
+///1
+///2
+///3
+///4
+///5
+///6
+///7
+///8
+///9
+///10
+///
 //==========================

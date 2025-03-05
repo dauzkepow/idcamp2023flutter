@@ -89,6 +89,8 @@ num checkDiscount(num price) {
 //tetapi proses deklarasinya terjadi pada perintah berikutnya.
 //Hal ini harus dihindari karena pemanggilan variabel dapat dilakukan setelah proses deklarasi terjadi.
 
+
+/*
 //=====================
 var price = 300000;
 
@@ -113,3 +115,4 @@ num checkDiscount(num price) {
 //=====================
 
 //suatu variabel harus dideklarasikan sebelum dipanggil
+*/

@@ -29,7 +29,6 @@ void main() {
 //lalu bagaimana jika anda ingin melakukan operasi lain ketika kondisi bernilai false?
 //yaitu dengan menggunakan false
 
-/*
 //==========================
 //-- Contoh-2 - if else
 void main() {
@@ -37,17 +36,26 @@ void main() {
   var closeHours = 21;
   var now = 17;
 
+  /*
+  //cara-1
   if (now > openHours && now < closeHours) {
     print("Hello, we'e open");
   } else {
     print("Sorry, we're closed");
   }
+  */
+
+  //cara-2
+  print(
+    now > openHours && now < closeHours
+        ? "Hello, we'e open"
+        : "Sorry, we're closed",
+  );
 
   ///output
   ///Hello, we'e open
 }
 //==========================
-*/
 
 //bisa juga untuk mengecek beberapa kondisi sekaligus dengan menggabungkan else dan if
 
@@ -82,6 +90,7 @@ String calculateScore(score) {
 ---- Conditional Expressions ----
 conditional ? true expression : false expression
 var shopStatus = now > openHours ? "Hello, we're open" : "Sorry, we're closed!";
+print shopStatus;
 
 expression1 ?? expression2
 var buyer = name ?? 'user';
@@ -91,6 +100,7 @@ jika bernilai null buyer akan berisi 'user'
 
 */
 
+/*
 //Latihan--
 //minyak goreng dan telur
 //ke pasar beli 1 botol minyak goreng, kalau ada telur ambil 6
@@ -104,6 +114,5 @@ void main() {
     print('minyak yang diambil = ${minyak * 6}'); //minyak yang diambil = 6
   }
 }
-
-
 //==========================
+*/
