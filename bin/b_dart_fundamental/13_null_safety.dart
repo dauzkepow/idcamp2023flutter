@@ -123,7 +123,7 @@ void buyAMeal(String? favoriteFood) {
 
 void main() {
   String? favoriteFood = "Ayam Goreng";
-  buyAMeal(favoriteFood!); //agar mengembalikan nilai non-null
+  buyAMeal(favoriteFood); //agar mengembalikan nilai non-null
 }
 
 void buyAMeal(String favoriteFood) {
