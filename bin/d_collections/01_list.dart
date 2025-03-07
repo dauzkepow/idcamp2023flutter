@@ -1,4 +1,4 @@
-//List
+//List = []
 //-> menampung banyak data dalam satu objek
 
 /*

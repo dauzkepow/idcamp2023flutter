@@ -83,7 +83,7 @@ void main() {
     int j = i;
     String text = "";
     while (j > 0) {
-      text = text + "*";
+      text = "$text*";
       j--;
     }
     print(text);
