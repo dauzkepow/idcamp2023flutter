@@ -1,4 +1,6 @@
 //Null Safety
+//->deklarasi variabel tidak bernilai (null)
+
 /*
   sejak dart 2.12 
   variabel digunakan untuk menyimpan nilai

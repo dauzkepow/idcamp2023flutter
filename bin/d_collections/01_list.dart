@@ -8,7 +8,8 @@
   syntak keyword :
   List<tipe_data> namaList = [data, data, data, data];
 
-  List<int> numberList = [1,2,3,4,5];
+  List<int> numberList = [1,2,3,4,5]; //data sesuai tipe data Listnya
+  List<dynamic> namaList = [data, data, data, data]; //kumpulan nilai campuran tipe data
 
   - contoh diatas objek list berisi kumpulan data integer
   - karena kompiler bisa tahu tipe data yang ada dalam list, maka tidak perlu menulis secara eksplisit

@@ -15,7 +15,7 @@
 
 /*
 //===========================
-//-- Contoh-1 - Hitung luas lingkaran const
+//-- Contoh-1 - Hitung luas lingkaran const (mutable)
 const num pi = 3.14; //deklarasi di luar fungsi apapun
 
 void main() {

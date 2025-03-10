@@ -2,7 +2,7 @@
 //-> menyimpan data dengan format key-value
 
 /*
-//keyword syntax :
+//--- keyword syntax : ---
   var nama_variabel = {
     'key' : 'value',
     'key' : 'value',
@@ -11,10 +11,20 @@
   };
 
   - key : value
+  - key tidak bisa sama
   - String sebelah kiri titik dua (:) = key
   - sebelah kanan titik dua (:) = value
   - untuk mengakses nilai Map, bisa menggunakan key yang sudah dimasukkan
   - Misalnya menggunakan key "Jakarta" untuk mendapatkan value "Indonesia"
+
+//--- bisa juga seperti ini : ---
+  Map<String, String> capital = {
+    'Jakarta' : 'Indonesia',
+    'London' : 'England',
+  };
+
+  - <String kiri untuk tipe data key, String kanan untuk tipe data value>
+
 */
 
 /*

@@ -5,7 +5,8 @@
 
 // syntak keyword :
 // Set<tipe_data> namaSet = new Set.from([data, data, data, data]);
-//var nama_variabel = {data, data, data};
+// Set<tipe_data> namaSet = {data, data, data};
+// var nama_variabel = {data, data, data};
 
 /*
 //================================

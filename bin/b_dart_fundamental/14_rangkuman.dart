@@ -28,7 +28,8 @@
     const = compile time constants nilai tersebut harus sudah diketahui sebelum program dijalankan.
     final = nilainya masih bisa diinisialisasi ketika aplikasi berjalan.
   - Null Safety = membatasi penggunaan nilai null yang rawan menyebabkan crash
-
+  - Null-Aware Operator (?)
+  - Null-Bang Operator (!)
   video pembahasan dari dicoding :
   https://www.youtube.com/watch?v=P8JJDD-e0Nc&t=2s
 */
