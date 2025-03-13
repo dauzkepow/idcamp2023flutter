@@ -29,7 +29,7 @@
  */
 
   //untuk memberikan nilai pada property, silakan akses property yang ada di dalam sebuah class
-  //03_constructor/animal.dartanimal.dart
+  //03_constructor/animal.dart
   //03_constructor/main.dart
 
 /* 
@@ -87,6 +87,7 @@
   ...
 
     Animal.cat(this.name, this.weight) {
+      //di dalam constructor body
       age = 2;
     }
   }
@@ -100,7 +101,7 @@
   ...
   ...
 
-    Animal.car(this.name, this.weight) : age = 2 {
+    Animal.cat(this.name, this.weight) : age = 2 {
       //write your code here
     }
   }
