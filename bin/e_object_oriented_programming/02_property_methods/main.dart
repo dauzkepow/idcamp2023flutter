@@ -1,7 +1,7 @@
 import 'animal.dart';
 
 void main() {
-  var dicodingCat = Animal('Elmo', 5, 4.2);
+  var dicodingCat = Animal('Elmo', 5, 4.2); //objek
 
   dicodingCat.eat(); //Elmo is eating.
   dicodingCat.poop(); //Elmo is pooping.

@@ -61,7 +61,7 @@
 
   - Selain dengan setter, juga bisa mengubah nilai dengan property dari pemanggilan method
     pada contoh class Animal tentunya tidak bisa langsung mengubah nilai berat badan,
-    namun kita bisa menambah dan mengubah nilainya melalui proses makan atau buang air besar (EEK)
+    namun kita bisa menambah dan mengubah nilainya melalui proses method makan atau buang air besar (EEK)
 
   Contoh :
     void eat() {
