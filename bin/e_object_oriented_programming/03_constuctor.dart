@@ -79,7 +79,7 @@
 //--- Initializer List ---
 /* 
   - terkadang kita ingin mendeklarasikan salah satu property class dengan nilai default
-  - skenario tersebut dapat dilakukan denganmendeklarasikan property di dalam constructor body
+  - skenario tersebut dapat dilakukan dengan mendeklarasikan property di dalam constructor body
 
   Contoh :
   class Animal {
