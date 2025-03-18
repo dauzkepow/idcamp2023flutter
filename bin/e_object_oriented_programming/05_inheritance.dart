@@ -1,11 +1,14 @@
-//Inheritance - Pewarisan - extenda
+//Inheritance - Pewarisan - extends
 //-> kemampuan suatu program untuk membuat class baru dari class yang ada
 /*
+  class Parent{}
+  class Child extends Parent{}
+
   - keyword = extends
 
   - beberapa objek bisa memiliki beberapa karakteristik, perilaku, method, fungsi yang sama
     namun mereka bukanlah objek yang sama
-  - kosep :
+  - konsep :
     anak mewarisi sifat dari orang tuanya
   - dalam OOP class yang menurunkan sifat disebut kelas induk (parent class/ superclass)
   - kelas yang mewarisi kelas induknya disebut kelas anak (child class/subclass)
@@ -33,10 +36,12 @@
     caranya buat sebuah class baru yang nantinya akan diturunkan sifatnya
 
   class Animal
+  //property
   +name
   +weight
   +age
   -----------------------
+  //method
   -eat()
   -sleep()
   -poop()
@@ -51,5 +56,25 @@
     }
   - dengan begitu kelas Cat mewarisi kelas Animal
 
+05_inheritance/animal.dart
+05_inheritance/cat.dart
+05_inheritance/main.dart
+
+
+//----------- Inheritance Constructor ----------------
+  - Karena class Animal memiliki constructor untuk menginisialisasi property di dalamnya,
+    maka semua class turunannya juga perlu mengimplementasikan constructor tersebut
+  - ketika membuat class Cat tanpa mendefinisikan constructor kita akan mengalami error
+  Pada class turunan :
+  keyword :
+  Cat(String name, int age, double weight) : super (name, age, wight);
+
+  - super diatas akan diarahkan ke constructor dari kelas Animal
+  - jika ingin menginisialisasikan nilai furColor melalui constructor , maka bisa menambahkan parameter di dalam constructor
+  keyword :
+  Cat(String name, int age, double weight, String furColor) : this.furColor = furColor, super(name, age, weight);
+
+  atau bisa meringkasnya seperti materi constructor
+  Cat(String name, int age, double weight, this.furColor) : super (name, age, wight);
 
 */
