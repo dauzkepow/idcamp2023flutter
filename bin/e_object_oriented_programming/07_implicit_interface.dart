@@ -1,4 +1,4 @@
-//Implicit Interface - implements
+//Implicit Interface - implements - @override
 
 /*
   - keyword = implements
@@ -36,5 +36,13 @@
     
   }
 
-
+  - Anda akan mendapati error yang memberikan pesan "Missing concrete implementation of Flyable.fly"
+    artinya kita harus mengimplementasikan fungsi fly pada interface Flyable
+  - @override menunjukkan fungsi tersebut mengesampingkan fungsi yang ada di interface atau kelas induknya,
+    lalu menggunakan fungsi yang ada dalam kelas itu sendiri sebagai gantinya
 */
+
+//07_implicit_interface/animal.dart
+//07_implicit_interface/flyable.dart
+//07_implicit_interface/bird.dart
+//07_implicit_interface/main.dart
