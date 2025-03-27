@@ -37,7 +37,7 @@
   - Function are first-class citizen and be higher-order
     first-class citizen = function berlaku sama seperti komponen pemrograman yang lain
     sebuah fungsi bisa dimasukkan ke variabel menjadi parameter dalam suatu fungsi 
-    dan juga nenjadi nilai kembalian pada fungsi
+    dan juga menjadi nilai kembalian pada fungsi
     
     higher order function = fungsi yang mengambil fungsi lain sebagai argumen dan juga
     dapat mengembalikan fungsi

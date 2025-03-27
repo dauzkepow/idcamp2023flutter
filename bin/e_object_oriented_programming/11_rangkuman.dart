@@ -14,6 +14,6 @@
   - Class merupakan blueprint untuk mendefinisikan karakteristik dari sebuah objek
   - Di dalam class, variabel = property, fungsi = method
   - Abstract class = gambaran umum dari sebuah kelas, tidak dapat direalisasikan ke sebuah objek
-  - Mixin = untukmenggabungkan dan memanfaatkan property/,ethod dari beberapa kelas
-  - Extentsion method digunakan untuk membyat method tambahan pada kelas yang sudah ada
+  - Mixin = untuk menggabungkan dan memanfaatkan property/,ethod dari beberapa kelas
+  - Extentsion method digunakan untuk membuat method tambahan pada kelas yang sudah ada
 */
