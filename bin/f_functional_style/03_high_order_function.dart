@@ -11,8 +11,7 @@
 
   - Fungsi diatas merupakan higher order function karena menerima parameter fungsi lain
   - untuk memanggil fungsi diatas bisa langsung memasukkan lambda sebagai parameter
-    maupun variabel yang berisi nilai berupa fungsi
-  
+    maupun variabel yang berisi nilai berupa fungsi  
  */
 
 //===================================
@@ -34,10 +33,9 @@ void myHigherOrderFunction(
   print(message); //Hello
   print(myFunction(3, 4)); //7 - sum(3,4) atau return 3 + 4
 }
-
 //===================================
 
-//deklarasi higher order function ini bisa menjadi sedikit tricky
+//namun eklarasi higher order function ini bisa menjadi sedikit tricky
 //misalnya kode di bawah ini tidak akan terdeteksi error namun ketika dijalankan malah crash
 //kenapa????
 
@@ -58,14 +56,52 @@ void myHigherOrderFunction(
 
   - pada fungsi diatas kita perlu memasukkan fungsi dengan dua parameter 
     dan nilai kembali berupa int sebagai parameter
+
   - pada materi collection sebenarnya kita telah menggunakan satu fungsi 
     yang merupakan higher order function yaitu fungsi forEach().
   - Sebagai contoh kita punya daftar bilangan fibonacci yang disimpan ke sebuah variabel
-  
-  var fibonacci = [0,1,1,2,3,5,8,13];
+*/
 
-  - ketika memanggil fungsi ini kita melaukan operasi pada masing-masing item misalnya mencetak ke konsol
+/*
+//===================================
+//Contoh-2
+void main() {
+  var fibonacci = [0, 1, 1, 2, 3, 5, 8, 13];
+
+  // ketika memanggil fungsi ini kita melaukan operasi pada masing-masing item misalnya mencetak ke konsol
   fibonacci.forEach((item) {
     print(item);
   });
+}
+///Output
+///0
+///1
+///1
+///2
+///3
+///5
+///8
+///13
+//===================================
+*/
+
+/*
+//=============================
+//Contoh-2
+//higher order function menerima fungsi sebagai parameter
+void prosesAngka(int a, int b, Function operasi) {
+  var hasil = operasi(a, b);
+  print('Hasil operasi: $hasil');
+}
+
+int tambah(int x, int y) => x + y;
+int kali(int x, int y) => x * y;
+
+void main() {
+  prosesAngka(4, 2, tambah); //6
+  prosesAngka(4, 2, kali); //8
+}
+
+//prosesAngka menerima dua angka a dan b dan sebuah fungsi operasi untuk hitung hasil
+//tambah dan kali adalah fungsi yang akan dikirim sebagai parameter ke prosesAngka
 */

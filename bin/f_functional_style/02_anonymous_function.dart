@@ -47,7 +47,7 @@ void main() {
   //Function printLambda = () => print('This is lambda function');
 
   //Memanggil nama variabel dari anonymous function
-  print(sum(3, 4));
+  print(sum(3, 4)); //7
   printLambda(); //This is lambda function
 }
 
