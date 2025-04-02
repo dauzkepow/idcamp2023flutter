@@ -1,5 +1,7 @@
 //Closures
 //-> suatu fungsi dapat dibuat dalam lingkup global atau di dalam fungsi lain
+//-> kemampuan function atau anonymous function berinteraksi dengan data-data disekitarnya
+//-> fungsi yang bisa merubah nilai variabel dalam satu scope
 
 /*
   - suatu fungsi dapat mengakses variabel di dalam lexical scope-nya
@@ -7,6 +9,7 @@
     fungsi yang berada di dalam memiliki akses ke variabel di lingkup induknya
 */
 
+/*
 //==================================
 //Contoh-1
 void main() {
@@ -20,6 +23,7 @@ Function calculate(base) {
   return () => print('Value is ${base + count++}');
 }
 //==================================
+*/
 
 /*
   - di dalam fungsi calculate() terdapat variabel count dan mengembalikan nilai berupa fungsi
@@ -35,3 +39,22 @@ Function calculate(base) {
 */
 
 //scope = lingkup, bagian
+
+//==================================
+//Contoh-2 - dari PZM
+
+void main() {
+  var counter = 0;
+
+  //fungsi increment mengubah data variabel counter karena masih satu scope
+  void increment() {
+    print('Increment');
+    counter++;
+  }
+
+  print(counter); //0
+  increment(); //Increment
+  increment(); //Increment
+  print(counter); //hasil berubah = 2
+}
+//==================================
