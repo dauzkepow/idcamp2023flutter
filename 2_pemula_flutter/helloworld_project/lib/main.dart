@@ -132,15 +132,12 @@ class _MyHomePageState extends State<MyHomePage> {
 //=============================================
 */
 
+/*
 //=============================================
 //2_Hello World Sederhana App
 //main() = kode dasar project Flutter
 void main() {
-  runApp(MyApp());
-  //method runApp() = menampilkan widget ke layar
-  //runApp() memiliki parameter berupa widget
-  //agar bisa memberikan objek widget ke dalam runApp() maka perlu membuat class
-  //yang merupakan turunan dari class widget
+  runApp(MyApp()); //menjalankan runApp() memanggil MyApp()
 }
 
 //buat class MyApp dari turunan StatelessWidget{...}
@@ -184,6 +181,7 @@ class MyApp extends StatelessWidget {
   - https://api.flutter.dev/flutter/widgets/Text-class.html
 */
 //=============================================
+*/
 
 /*
 //=============================================
@@ -253,3 +251,210 @@ class _HomePageState extends State<HomePage> {
 
 //=============================================
 */
+
+/*
+//=============================================
+//4_Dari Erico Darmawan
+//buat fungsi main() fungsi utama yang diajalankan
+void main() {
+  //MyApp app = const MyApp();
+  //method runApp() berfungsi untuk menjalankan aplikasi flutter ke layar
+  //method runApp() = menampilkan widget ke layar
+  //runApp() memiliki parameter berupa widget
+  //agar bisa memberikan objek widget ke dalam runApp() maka perlu membuat class
+  //yang merupakan turunan dari class widget
+  runApp(const MyApp());
+}
+
+//bisa menurunkan class dari dua buah class bawaan flutter stateless dan statefull
+//stateless dan statefull turunan dari abstract class Widget
+//class apapun turunan dari stateless dan statefull termasuk widget
+//objek class MyApp untuk mengisi parameter method runApp()
+//StatelessWidget merupakan abstract class dan memiliki method yang di @override bernama build()
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    //method build() untuk mengembalikan widget yang akan ditampilkan ke layar sebagai
+    //tampilan dari class ini yaitu MyApp
+    //untuk tampilan MyApp kita akan kembalikan widget bawaan Flutter bernama MaterialApp()
+    //MaterialApp template dari Material Design
+    //didalam constructor MaterialApp() terdapat named parameter bernama home
+    //home meminta sebuah widget yang akan menjadi tampilan utama dari materialApp ini
+    //oleh karena itu kita buat halaman utama kita yang bernama MainPage
+    //semua class yang turunan dari StatelessWidget sebaiknya memiliki constructor yang meminta
+    //parameter key sehingga bisa digunakan class diatasnya
+    //
+    //MainPage mainPage = const MainPage();
+    //MaterialApp materialApp = MaterialApp(home: mainPage);
+    //return materialApp;
+    return const MaterialApp(home: MainPage());
+  }
+}
+
+class MainPage extends StatelessWidget {
+  const MainPage({super.key});
+
+  //return objek Scaffold()
+  //Scaffold = kerangka dari sebuah halaman
+  @override
+  Widget build(BuildContext context) {
+    //constructor Scaffold memiliki banyak parameter (appBar, body, Drawer, dll)
+    //appBar widget diatas page
+    //body widget badan page
+    //constructor appBar memiliki parameter (title = widget sebagai judul)
+    //objek text menampilkan teks aplikasi pertamaku
+    //====================================================
+    //sebuah objek dapat langsung dibuat tanpa ditamping di variabel
+    //Text title = Text("Aplikasi pertamaku");
+    //Text body = Text("Hello Cruel World");
+    //Center center = const Center(child: Text("Hello Cruel World"));
+    //AppBar appBar = AppBar(title: Text("Aplikasi pertamaku"));
+    /*
+    Scaffold scaffold = Scaffold(
+      appBar: AppBar(title: Text("Aplikasi pertamaku")),
+      body: const Center(child: Text("Hello Cruel World")),
+    );
+    */
+    return Scaffold(
+      appBar: AppBar(title: Text("Aplikasi pertamaku")),
+      body: const Center(child: Text("Hello Cruel World")),
+    );
+    //appBar: = named parameter dari constructor Scaffold
+    //AppBar = objek
+  }
+}
+
+//=============================================
+*/
+
+//=====================================================================
+//Materi Pengenalan Widget -> Stateless Widget dan Stateful Widget
+
+/*
+//=====================================================================
+//-- Stateless Widget
+//buat widget Heading - untuk membuat judul
+class Heading extends StatelessWidget {
+  //karena statelessWidget, maka state yang ada di dalam class tersebut harus dibuat final
+  final String text; // state text bersifat final
+
+  //nilainya hanya dapat diisi melalui constructor class-nya
+  // lalu state text masuk ke constructor
+  const Heading({Key? key, required this.text}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    //objek Text dengan beberapa parameternya
+    return Text(
+      text,
+      style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+    );
+  }
+}
+
+//panggil widget ke project
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const Scaffold(
+        body: Center(
+          //Panggil class widget Heading untuk menampilkan text yang sudah dibuat
+          //Fungsi Heading, parameter text
+          child: Heading(text: 'Hello World!'),
+          //child: Text('Hello World!'),
+        ),
+      ),
+    );
+  }
+}
+//=====================================================================
+*/
+
+//=====================================================================
+//-- Stateful Widget
+
+//buat BiggerText
+class BiggerText extends StatefulWidget {
+  final String text;
+
+  const BiggerText({Key? key, required this.text}) : super(key: key);
+
+  @override
+  State<BiggerText> createState() => _BiggerTextState();
+}
+
+class _BiggerTextState extends State<BiggerText> {
+  double _textSize = 16.0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Text(widget.text, style: TextStyle(fontSize: _textSize)),
+
+        ElevatedButton(
+          onPressed: () {
+            //Mengubah nilai state harus dilakukan pada fungsi setState
+            setState(() {
+              _textSize = 32.0; //ukuran text diubah menjadi 32
+            });
+          },
+          child: const Text("Perbesar"),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              _textSize = 10.0;
+            });
+          },
+          child: const Text("Perkecil"),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              _textSize = 16.0;
+            });
+          },
+          child: const Text("Ukuran Normal"),
+        ),
+      ],
+    );
+  }
+}
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const Scaffold(
+        //panggil class BiggerText dengan parameter text
+        body: Center(child: BiggerText(text: "Hello World!")),
+        //body: Center(child: Text('Hello World!')),
+      ),
+    );
+  }
+}
+
+//ketika tombol Perbesar ditekan text Hello World akan membesar karena state _textSize
+//diubah nilainya
+
+//Mengubah nilai state harus dilakukan pada fungsi setState
+
+//=====================================================================
