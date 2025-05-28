@@ -1,0 +1,26 @@
+name: font_09
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  #Tambah font ke pubspec.yaml
+  fonts:
+  - family: Oswald #nama font yang dipanggil di dart flutter
+    fonts:
+    - asset: fonts/Oswald/Oswald-Regular.ttf #lokasi file font di folder fonts
+

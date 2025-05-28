@@ -38,7 +38,7 @@ class _CradioState extends State<Cradio> {
                 });
               },
             ),
-            title: Text('Dart'),
+            title: Text('Dart'), //huruf yang tampil di radio
           ),
           ListTile(
             leading: Radio<String>(
@@ -80,6 +80,10 @@ class _CradioState extends State<Cradio> {
     );
   }
 }
+
+//terdapat variabel language digunakan pada groupValue tiap Radio
+//language inilah yang menyimpan nilai radio yang dipilih
+//nilainya akan berubah ketika fungsi onChanged terpanggil 
 */
 
 //Contoh Radio dengan List
