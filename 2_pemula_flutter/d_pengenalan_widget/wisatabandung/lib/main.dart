@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wisatabandung/codelab_1/detail_screen_1.dart';
+import 'package:wisatabandung/codelab_3/main_screen.dart';
 
 import 'codelab_2/detail_screen.dart';
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       title: 'Wisata Bandung',
       theme: ThemeData(),
       //home: const DetailScreen_1(),
-      home: const DetailScreen(), //detail_screen.dart
+      //home: const DetailScreen(), //detail_screen.dart
+      home: MainScreen(),
     );
   }
 }
