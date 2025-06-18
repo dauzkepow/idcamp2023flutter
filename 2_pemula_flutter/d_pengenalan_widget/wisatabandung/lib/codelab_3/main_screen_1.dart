@@ -1,7 +1,7 @@
 //List Daftar tempat wisata
 
 import 'package:flutter/material.dart';
-import 'package:wisatabandung/codelab_2/detail_screen.dart';
+import 'package:wisatabandung/codelab_2/detail_screen_2.dart';
 import 'package:wisatabandung/model/tourism_place.dart'; //import ke main_screen.dart
 
 /*

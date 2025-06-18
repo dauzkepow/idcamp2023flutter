@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wisatabandung/codelab_1/detail_screen_1.dart';
-import 'package:wisatabandung/codelab_3/main_screen.dart';
-
-import 'codelab_2/detail_screen.dart';
+import 'codelab_4/main_screen.dart';
 
 void main() => runApp(const MyApp());
 
