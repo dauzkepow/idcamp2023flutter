@@ -17,6 +17,5 @@
     web/manifest.json
     bisa mengatur nama aplikasi, ikon, dan konfigurasi lainnya
     web = flutter build web
-    
 
 */
